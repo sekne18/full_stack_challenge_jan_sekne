@@ -1,5 +1,6 @@
 # Full-Stack Challenge
 
-App has client and server.
+This react app has client and server. Client is running on port 3000 and server on 5000.
 
-Images are fetched from the api and injected into the application. When the search button is clicked, another request goes to server and gets us the images which we looked for.
+Client makes calls to backend to get the latest feed. When the search button is clicked, another request goes to the server and gets us the images that we searched for.
+Application is responsive and has some minor error handling. In case of 
