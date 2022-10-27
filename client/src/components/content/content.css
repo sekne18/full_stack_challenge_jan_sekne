@@ -10,9 +10,9 @@
    margin: 90px;
    position: relative;
 }
-.content-container p {
-   font-size: 50px;
-   color: #E26868;
+.content-container .progress-bar {
+   display: flex;
+    margin: auto;
 }
 /****Searchbar CSS*****/
 .search-container {

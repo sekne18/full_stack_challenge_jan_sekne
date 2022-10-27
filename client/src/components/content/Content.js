@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FcSearch } from 'react-icons/fc';
 import ImageCard from '../image/ImageCard';
+import CircularProgress from '@mui/material/CircularProgress';
 import './content.css';
 
 function Content() {
@@ -33,7 +34,7 @@ function Content() {
       <div className='content-container'>
       { 
       /* Checks if there are no images. If its true it renders <p> tag, otherwise <ImageCard/> */
-      images.length === 0 ? <p>No hits</p> :
+      images.length === 0 ? <div className='progress-bar'><CircularProgress size={70} color="inherit"/></div> :
 
       /* map function goes through each item and allows us to create <ImageCard/> components. Item contains all the information about the selected image */
       images.map((item) => (
